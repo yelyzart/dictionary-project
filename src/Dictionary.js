@@ -5,7 +5,7 @@ import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
-  let [results, setResults] = useState({});
+  let [results, setResults] = useState(null);
 
   function whatKeyword(event) {
     setKeyword(event.target.value);
