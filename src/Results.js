@@ -1,4 +1,4 @@
-import React from "./react";
+import React from "react";
 import Phonetics from "./Phonetics";
 import Meaning from "./Meaning";
 
