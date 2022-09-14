@@ -1,5 +1,5 @@
-import React, { useState } from "./react";
-import axios from "./axios";
+import React, { useState } from "react";
+import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
 import "./Dictionary.css";
@@ -23,7 +23,6 @@ export default function Dictionary(props) {
   }
 
   function search(event) {
-    event.preventDefault();
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(url).then(handleResponse);
 
