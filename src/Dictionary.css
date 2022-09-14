@@ -1,0 +1,31 @@
+.Dictionary {
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px 0 50px 0;
+}
+.Dictionary section {
+  padding: 20px;
+  height: 180px;
+  background-color: aliceblue;
+  border-radius: 7px;
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.24);
+}
+.Dictionary input {
+  border: 1px solid grey;
+  border-radius: 7px;
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+}
+.Dictionary input:focus {
+  border: none;
+}
+.Dictionary h4 {
+  float: left;
+  margin-bottom: 15px;
+}
+.Dictionary span {
+  float: left;
+  margin-top: 5px;
+  text-decoration: ;
+}

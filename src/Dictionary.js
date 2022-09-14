@@ -44,9 +44,13 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
-        <form onSubmit={search}>
-          <input type="search" onChange={whatKeyword} />
-        </form>
+        <section>
+          <h4>What word do you want to look up?</h4>
+          <form onSubmit={search}>
+            <input type="search" onChange={whatKeyword} />
+          </form>
+          <span>i.e. paris, wine, yoga, coding</span>
+        </section>
         <Results results={results} />
         <Photos photos={photos} />
       </div>
