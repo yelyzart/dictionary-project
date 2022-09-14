@@ -3,12 +3,13 @@
   margin: 0 auto;
   padding: 10px 0 50px 0;
 }
-.Dictionary section {
+.first-block {
   padding: 20px;
   height: 180px;
   background-color: aliceblue;
   border-radius: 7px;
   box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.24);
+  margin-bottom: 20px;
 }
 .Dictionary input {
   border: 1px solid grey;
@@ -27,5 +28,4 @@
 .Dictionary span {
   float: left;
   margin-top: 5px;
-  text-decoration: ;
 }

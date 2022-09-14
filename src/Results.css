@@ -1,0 +1,8 @@
+.second-block {
+  padding: 10px;
+  height: 100%;
+  background-color: aliceblue;
+  border-radius: 7px;
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.24);
+  margin-bottom: 20px;
+}
