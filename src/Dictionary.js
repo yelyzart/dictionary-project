@@ -23,8 +23,7 @@ export default function Dictionary(props) {
     setPhotos(response.data.photos);
   }
 
-  function search(event) {
-    event.preventDefault();
+  function search() {
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(url).then(handleResponse);
 
@@ -36,6 +35,11 @@ export default function Dictionary(props) {
         headers: { Authorization: `Bearer ${pexelApiKey}` },
       })
       .then(pexelsResponse);
+  }
+
+  function submit(event) {
+    event.preventDefault();
+    search();
   }
 
   function load() {
@@ -52,7 +56,7 @@ export default function Dictionary(props) {
         </div>
         <section className="first-block">
           <h4>What word do you want to look up?</h4>
-          <form onSubmit={search()}>
+          <form onSubmit={submit}>
             <input type="search" onChange={whatKeyword} placeholder="wine" />
           </form>
           <span>i.e. music, overthinking, relax, coding</span>
