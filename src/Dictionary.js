@@ -64,6 +64,7 @@ export default function Dictionary(props) {
             href="https://inspiring-marigold-f98292.netlify.app/"
             target="_blank"
             alt="my-site-link"
+            rel="noreferrer"
           >
             Yelyzaveta Zyrianska
           </a>{" "}
@@ -73,6 +74,7 @@ export default function Dictionary(props) {
             href="https://github.com/yelyzart/dictionary-project"
             target="_blank"
             alt="git-link"
+            rel="noreferrer"
           >
             GitHub
           </a>{" "}
@@ -81,6 +83,7 @@ export default function Dictionary(props) {
             href="https://dancing-clafoutis-356731.netlify.app/"
             target="_blank"
             alt="site-link"
+            rel="noreferrer"
           >
             Netlify
           </a>
