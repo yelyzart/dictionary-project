@@ -1,8 +1,22 @@
 .Dictionary {
   width: 800px;
   margin: 0 auto;
-  padding: 10px 0 50px 0;
+  padding: 10px 0 30px 0;
 }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Dictionary h1 {
+  margin-right: 20px;
+  font-family: "Aref Ruqaa Ink", serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Euphoria Script", cursive;
+  font-weight: 700;
+  font-size: 67px;
+}
+
 .first-block {
   padding: 20px;
   height: 180px;
@@ -10,6 +24,7 @@
   border-radius: 7px;
   box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.24);
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 .Dictionary input {
   border: 1px solid grey;
@@ -28,4 +43,11 @@
 .Dictionary span:first-of-type {
   float: left;
   margin-top: 5px;
+}
+.Dictionary a:hover {
+  color: rgb(186, 136, 18);
+}
+.footer {
+  font-size: 14px;
+  text-align: center;
 }

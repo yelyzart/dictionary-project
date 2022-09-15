@@ -1,8 +1,15 @@
 .second-block {
-  padding: 10px;
+  padding: 20px;
   height: 100%;
   background-color: aliceblue;
   border-radius: 7px;
   box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.24);
   margin-bottom: 20px;
+}
+.Results h2:first-of-type {
+  font-family: "Aref Ruqaa Ink", serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Euphoria Script", cursive;
+  font-weight: 700;
+  font-size: 54px;
 }

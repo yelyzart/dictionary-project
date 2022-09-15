@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
+import logo from "./dictionary.png";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
@@ -44,6 +45,10 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
+        <div className="header">
+          <h1>Dictionary</h1>
+          <img src={logo} width="80" alt="" />
+        </div>
         <section className="first-block">
           <h4>What word do you want to look up?</h4>
           <form onSubmit={search}>
@@ -53,6 +58,33 @@ export default function Dictionary(props) {
         </section>
         <Results results={results} />
         <Photos photos={photos} />
+        <p className="footer">
+          This project was coded by{" "}
+          <a
+            href="https://inspiring-marigold-f98292.netlify.app/"
+            target="_blank"
+            alt="my-site-link"
+          >
+            Yelyzaveta Zyrianska
+          </a>{" "}
+          and is open-sourced on
+          {""}{" "}
+          <a
+            href="https://github.com/yelyzart/dictionary-project"
+            target="_blank"
+            alt="git-link"
+          >
+            GitHub
+          </a>{" "}
+          and hosted on{" "}
+          <a
+            href="https://dancing-clafoutis-356731.netlify.app/"
+            target="_blank"
+            alt="site-link"
+          >
+            Netlify
+          </a>
+        </p>
       </div>
     );
   } else {
