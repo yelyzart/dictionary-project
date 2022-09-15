@@ -16,7 +16,10 @@
   font-weight: 700;
   font-size: 67px;
 }
-
+.Dictionary span:first-of-type {
+  color: rgb(44, 110, 127);
+  font-style: italic;
+}
 .first-block {
   padding: 20px;
   height: 180px;

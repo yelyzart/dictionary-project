@@ -52,9 +52,9 @@ export default function Dictionary(props) {
         <section className="first-block">
           <h4>What word do you want to look up?</h4>
           <form onSubmit={search}>
-            <input type="search" onChange={whatKeyword} />
+            <input type="search" onChange={whatKeyword} placeholder="wine" />
           </form>
-          <span>i.e. paris, wine, yoga, coding</span>
+          <span>i.e. music, overthinking, relax, coding</span>
         </section>
         <Results results={results} />
         <Photos photos={photos} />
