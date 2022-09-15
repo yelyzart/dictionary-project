@@ -23,8 +23,8 @@ export default function Dictionary(props) {
     setPhotos(response.data.photos);
   }
 
-  function search(event) {
-    event.preventDefault();
+  function search(e) {
+    e.preventDefault();
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(url).then(handleResponse);
 
