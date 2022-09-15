@@ -24,6 +24,7 @@ export default function Dictionary(props) {
   }
 
   function search(event) {
+    event.preventDefault();
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(url).then(handleResponse);
 
